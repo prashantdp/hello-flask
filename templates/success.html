@@ -1,0 +1,41 @@
+<html>  
+<head>  
+<title>success</title>  
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>  
+<body>  
+<p>File uploaded successfully</p>  
+<p>Overall Sentiment of the Document: {{doc_sentiment}}</p> 
+
+<h2>Score table</h2>
+<table style="width:50%">
+  <tr>
+    <th>SENTIMENT METRIC</th>
+    <th>SCORE</th> 
+  </tr>
+  <tr>
+    <td>{{label_0}}</td>
+    <td>{{score_0}}</td>
+    
+  </tr>
+  <tr>
+    <td>{{label_1}}</td>
+    <td>{{score_1}}</td>
+    
+  </tr>
+  <tr>
+    <td>{{label_2}}</td>
+    <td>{{score_2}}</td>
+  </tr> 
+</table>
+
+
+ 
+</body>  
+</html>  
